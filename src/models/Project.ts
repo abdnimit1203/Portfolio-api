@@ -10,6 +10,7 @@ const projectSchema = new Schema({
   demoEmail: { type: String, default: "" },
   demoPassword: { type: String, default: "" },
   featured: { type: Boolean, default: false },
+  active: { type: Boolean, default: true },
   order: { type: Number, default: 0 },
 });
 
