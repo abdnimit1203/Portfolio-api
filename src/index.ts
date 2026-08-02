@@ -34,6 +34,15 @@ app.use(async (_req, _res, next) => {
   next();
 });
 
+app.get("/", (_req, res) => {
+  res.json({
+    message: "Abdullah's Portfolio API Server",
+    status: "online",
+    health: "/api/health",
+    documentation: "https://github.com/abdnimit1203/Portfolio-api",
+  });
+});
+
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
 
 // Public read endpoints
