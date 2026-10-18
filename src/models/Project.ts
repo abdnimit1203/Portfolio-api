@@ -3,6 +3,7 @@ import { Schema, model } from "mongoose";
 const projectSchema = new Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
+  videoUrl: { type: String, default: "" },
   images: { type: [String], default: [] },
   techIcons: { type: [String], default: [] },
   githubUrl: { type: String, default: "" },
